@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/what"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:textColor="@color/teal_200"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="@string/title" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:contentDescription="@string/todo"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/icon" />
+
+    <Button
+        android:id="@+id/btnCircle"
+        android:drawableStart="@drawable/circleimg"
+        android:layout_width="match_parent"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="165dp"
+        android:layout_height="wrap_content"
+        android:text="@string/area_of_circle" />
+
+    <Button
+        android:id="@+id/btnRectangle"
+        android:drawableStart="@drawable/circleimg"
+        android:layout_width="match_parent"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:text="@string/area_of_rectangle" />
+
+    <Button
+        android:id="@+id/btnSphere"
+        android:drawableStart="@drawable/circleimg"
+        android:layout_width="match_parent"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:text="@string/volume_of_a_sphere" />
+
+    <Button
+        android:id="@+id/btnTriangle"
+        android:drawableStart="@drawable/circleimg"
+        android:layout_width="match_parent"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:text="@string/area_of_a_triangle" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:drawableStart="@drawable/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="80dp"
+        android:text="@string/about" />
+</LinearLayout>
+</ScrollView>

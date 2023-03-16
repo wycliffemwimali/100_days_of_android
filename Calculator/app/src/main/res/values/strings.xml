@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="title">Calculator</string>
+    <string name="area_of_rectangle">Area of Rectangle</string>
+    <string name="area_of_circle">Area of Circle</string>
+    <string name="volume_of_a_sphere">Volume of a Sphere</string>
+    <string name="area_of_a_triangle">Area of a Triangle</string>
+    <string name="about">About</string>
+    <string name="todo">Icon of the app</string>
+</resources>
