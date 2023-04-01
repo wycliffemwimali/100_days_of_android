@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
 //            resultTextView.text = "6"
             rollDice()
         }
+        // Do a dice role when the app starts
+        rollDice()
     }
 
     /**
@@ -35,8 +37,13 @@ class MainActivity : AppCompatActivity() {
         val dice = Dice(6)
         val diceRoll = dice.roll()
 
-        // Update the screen with the dice roll
+        // Find the ImageView in the layout
         val diceImage = findViewById<ImageView>(R.id.imageView)
+
+        // Update the content description
+        diceImage.contentDescription = diceRoll.toString()
+
+        // Determine which drawable resource ID to use based on the dice roll
         when(diceRoll){
             1 -> diceImage.setImageResource(R.drawable.dice_1)
             2 -> diceImage.setImageResource(R.drawable.dice_2)
