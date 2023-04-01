@@ -6,6 +6,10 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 
+/**
+ * This activity allows the user to roll a dice and view the result
+ * on the screen.
+ */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 //            toast.show()
 //              val resultTextView = findViewById<TextView>(R.id.textView)
 //            resultTextView.text = "6"
-              rollDice()
+            rollDice()
         }
     }
 
@@ -29,9 +33,9 @@ class MainActivity : AppCompatActivity() {
         resultTextView.text = diceRoll.toString()
     }
 
-    class Dice(private val numSides: Int){
+    class Dice(private val numSides: Int) {
 
-        fun roll(): Int{
+        fun roll(): Int {
             return (1..numSides).random()
         }
     }
